@@ -3,10 +3,11 @@ import timeit
 from matplotlib import pyplot as plt
 import numpy as np
 
+times = []
 x_axis = np.array([])
 y_axis = np.array([])
 
-for i in range(1_000, 1_000_001, 5_000):
+for i in range(1_000, 1_000_001, 20_000):
 
     x_axis = np.append(x_axis, i)
 
@@ -15,10 +16,19 @@ for i in range(1_000, 1_000_001, 5_000):
             k = 2 + 2
             i = i // 2
 
-    t = timeit.Timer("main(i)", "from __main__ import main, i")
+    t = timeit.Timer("main(i)", "from logPerformance import main, i")
     time = t.timeit(number=1000)
     y_axis = np.append(y_axis, time)
-    print("Range: {}, Time: {:.6f} (ms)".format(i, time))
+    times.append("Range: {}, Time: {:.6f} (ms)".format(i, time))
 
-plt.plot(x_axis, y_axis, '^g')
-plt.show()
+
+def showGraph():
+    plt.plot(x_axis, y_axis, '^y')
+    plt.show()
+
+
+def showTimes():
+    for time in times:
+        print(time)
+
+

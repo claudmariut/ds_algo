@@ -25,10 +25,6 @@ class SudokuSolver:
         """Return empty places."""
         return self.emptyPlaces
 
-    def getNodePlace(self, n):
-        """Get a specific node/empty place from the Empty Places."""
-        return self.emptyPlaces[n]
-
     def getNodeValue(self, node):
         """Return Value of the Node"""
         return self.sudoku[node[0]][node[1]]
