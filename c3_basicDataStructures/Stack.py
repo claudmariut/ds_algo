@@ -1,4 +1,6 @@
 # Stack class assumes the end of the list will hold the top of the stack.
+# So push() and pop() will both be O(1)
+# LIFO last-in first-out.
 
 class Stack:
     """Class to represent Stack ADT's implementing a data structures."""

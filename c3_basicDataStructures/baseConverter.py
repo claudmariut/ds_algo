@@ -20,7 +20,6 @@ def convertBase(decNumber, base):
     return newNumber
 
 
-print(convertBase(28, 17))
 
 
 
