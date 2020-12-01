@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/c3_basicDataStructures" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/c2_algorithmAnalysis" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/binary_search_tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/c4_recursion" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
